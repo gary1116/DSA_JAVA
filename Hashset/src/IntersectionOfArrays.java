@@ -55,16 +55,14 @@ public class IntersectionOfArrays {
 
         int len2=sc.nextInt();
 
-        int [] arr2=new int[len];
+        int [] arr2=new int[len2];
         System.out.println("Now Enter the numbers for array2 :- ");
 
         for(int i=0;i<len2;i++){
             arr2[i]=sc.nextInt();
         }
 
-        ArrayList<Integer> result =  new ArrayList<>();
-
-            result =intersect(arr1,arr2);
+        ArrayList<Integer> result =  intersect(arr1,arr2);
 
         System.out.println("The repeated values from both arrays are:- ");
         for(int i=0;i<result.size();i++){
