@@ -43,10 +43,10 @@ public class UniqueEmail {
             int plusIndex=name.indexOf("+");
 
             if(plusIndex==-1){
-                name=name.replaceAll(".","");
+                name=name.replace(".","");
             }else{
                 name=name.substring(0,plusIndex);
-                name=name.replaceAll(".","");
+                name=name.replace(".","");
             }
 
             String email=name+"@"+domain;
