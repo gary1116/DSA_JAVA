@@ -1,6 +1,6 @@
 /*
 
-Partition Array Into K-Distinct Groups
+Partition rray Into K-Distinct Groups
 
 You are given an integer array nums and an integer k.
 
