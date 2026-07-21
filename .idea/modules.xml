@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA_JAVA.iml" filepath="$PROJECT_DIR$/.idea/DSA_JAVA.iml" />
       <module fileurl="file://$PROJECT_DIR$/SchoolLevelProblems/SchoolLevelProblems.iml" filepath="$PROJECT_DIR$/SchoolLevelProblems/SchoolLevelProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sorting/sorting.iml" filepath="$PROJECT_DIR$/sorting/sorting.iml" />
     </modules>
   </component>
 </project>
