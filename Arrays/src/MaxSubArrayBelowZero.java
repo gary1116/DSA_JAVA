@@ -3,24 +3,16 @@ import java.util.Scanner;
 public class MaxSubArrayBelowZero {
 
     private static int maxSubArrayBelowZero(int []arr){
-        // Handles an empty array
-        if (arr == null || arr.length == 0) {
+        if(arr==null||arr.length==0){
             return 0;
         }
+        int maximum=arr[0];
+        int sum=arr[0];
+        for(int i=1;i<arr.length;i++){
+            sum=Math.max(arr[i],sum+arr[i]);
 
-        int sum = arr[0];
-        int maximum = arr[0];
-
-        // Start from index 1 because arr[0] is already used
-        for (int i = 1; i < arr.length; i++) {
-
-            // Start a new subarray or continue the previous subarray
-            sum = Math.max(arr[i], sum + arr[i]);
-
-            // Store the best sum found so far
-            maximum = Math.max(maximum, sum);
+            maximum=Math.max(maximum,sum);
         }
-
         return maximum;
     }
 
