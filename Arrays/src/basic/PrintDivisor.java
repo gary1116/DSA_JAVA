@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 public class PrintDivisor {
     public static ArrayList<Integer> divisor(int num){
-        ArrayList<Integer> list= IntStream.rangeClosed(1,num)
+        ArrayList<Integer> list=IntStream.rangeClosed(1,num)
                 .filter(i->num%i==0)
                 .boxed()
                 .collect(Collectors.toCollection(ArrayList::new));

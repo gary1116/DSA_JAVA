@@ -8,14 +8,14 @@ public class Palindrome {
         int original=n;
         int reverseNum=0;
         while(n>0){
-            int lastDigit=n%10;
-            reverseNum=reverseNum*10+lastDigit;
+            int lastdigit=n%10;
+            reverseNum=reverseNum*10+lastdigit;
             n=n/10;
         }
-        if(original!=reverseNum){
-            return false;
+        if(reverseNum==original){
+            return true;
         }
-        return true;
+        return false;
     }
 
     public static void main(String[] args) {
