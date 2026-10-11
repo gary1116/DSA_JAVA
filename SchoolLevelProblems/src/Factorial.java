@@ -1,19 +1,17 @@
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class Factorial {
 
     public static int factorialOfANum(int n){
-        int num=1;
-        if(n==0 ){
-            return 0;
-        }else if(n==1){
-            return 1;
-        }
+       if(n==0){
+           return 0;
+       }else if(n==1){
+           return 1;
+       }
 
-        for(int i=n;i>=1;i--){
-            num=num*i;
-        }
-            return num;
+       return IntStream.rangeClosed(1,n)
+               .reduce(1,(a,b)->a*b);
     }
     public static void main(String[] args) {
 

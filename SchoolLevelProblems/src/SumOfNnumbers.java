@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 //Input: n = 3
 //Output: 10
@@ -14,19 +15,20 @@ public class SumOfNnumbers {
 
     static int sumOfN(int n) {
 
-        int sum = 0;
-        if (n > 0) {
-            for (int i = 1; i <= n; i++) {
-                int currentsum=0;
-                for(int j=0;j<=i;j++){
-                    currentsum+=j;
-                }
-                sum+=currentsum;
-            }
-        } else {
-            return -1;
-        }
-        return sum;
+//        int sum = 0;
+//        if (n > 0) {
+//            for (int i = 1; i <= n; i++) {
+//                int currentsum=0;
+//                for(int j=0;j<=i;j++){
+//                    currentsum+=j;
+//                }
+//                sum+=currentsum;
+//            }
+//        } else {
+//            return -1;
+//        }
+//        return sum;
+        return IntStream.rangeClosed(1,n).sum();
     }
 
     public static void main(String[] args) {

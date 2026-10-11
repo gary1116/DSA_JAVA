@@ -10,21 +10,24 @@ import java.util.Scanner;
 public class PrimeNumber {
 
     static boolean checkPrime(int n){
-        int divisor=0;
+      int div=0;
 
-        if(n>0){
-            for(int i=1;i<=n;i++){
-                if(n % i == 0){
-                    divisor++;
-                }
-            }
-        }
-
-        if(divisor==2){
-            return true;
-        }else{
-            return false;
-        }
+      if(n==0){
+          return false;
+      } else if (n==1) {
+          return false;
+      }else{
+          for(int i=1;i<=n;i++){
+              if(n%i==0){
+                  div++;
+              }
+          }
+      }
+      if (div==2){
+          return true;
+      }else{
+          return false;
+      }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
