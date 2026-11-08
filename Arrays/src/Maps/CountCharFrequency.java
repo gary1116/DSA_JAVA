@@ -16,6 +16,7 @@ public class CountCharFrequency {
         }
 
         map.forEach((key,value)->System.out.println(key+" "+value));
+
     }
 
     public static void main(String[] args) {
